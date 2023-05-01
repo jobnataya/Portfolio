@@ -1,0 +1,106 @@
+/* ALL ELEMENTS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+/* THIS SECTION IS FOR HEADER */
+.header{
+    top: 0;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    z-index: 999;
+    background: transparent;
+}
+/* THIS SECTION IS FOR LOGO POSITION */
+.header .logo{
+    display: flex;
+}
+/* THIS SECTION IS FOR TEXT IN LOGO  */
+.header .logo h2{
+    padding-top: 39px;
+}
+/* FOR NAV */
+.header .nav ul li{
+    list-style: none;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: 0.5s;
+    padding: 10px;
+    
+}
+.header .nav{
+    padding-right: 20px;
+    padding-top: 30px;
+   
+}
+.header .nav ul li a:hover{
+    background: gray;
+    border-radius: 10%;
+    color: white;
+}
+/*THIS SECTION IS FOR LOGO IMAGE SIZE */
+.header .logo img{
+    height: 100px;
+    width: 100px;
+}
+/* Article */
+.article{
+    display: flex;
+    position: relative;
+}
+/* Aside */
+ .article .aside{
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    position: sticky;
+    background: gray;
+    width: 674px;
+    height: 452px;
+    line-height: 110px;
+    z-index: 999;
+    top: 15%;
+}
+.aside ul li a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.aside ul li{
+    padding-left: 30px;
+    border-bottom: 1px white;
+    border: 1px solid gray;
+    transition: 0.4s;
+    padding-right: 40px;
+}
+.aside ul li:hover{
+    background: rgba(0, 0, 0, 0.37);
+    color: white;;
+}
+/* Articles */
+.articles .Wfirewall{
+    text-align: justify;
+}
+.articles .Wfirewall p{
+    line-height: 20px;
+}
+.articles .Wfirewall h2{
+    color: rgb(250, 59, 91);
+}
+.articles .logof img{
+    width: 700px;
+    height: 400px;
+}
+.articles .logof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

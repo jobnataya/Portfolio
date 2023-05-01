@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-seri;
+    list-style: none;
+}
+body{
+    background-color: #000000;
+}
+.header{
+   top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    background-color:#121212;
+    border: 2px solid rgb(82, 80, 80);
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 60px;
+    align-items: center;
+    z-index: 9;
+}
+.header .imagelogo img{
+    height: 120px;
+    width: 200px;
+    filter: brightness(120%);
+}
+.imagelogo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.header .rightside li{
+    display: inline;
+    padding-left: 20px;
+    color: #f9f9f9;
+}
+.header .rightside ul li a{
+   text-decoration: none;
+   color: #f9f9f9;
+   transition: 0.5s;
+}
+.header .rightside ul li a:hover{
+    padding: 10px;
+    border: 1px dotted rgb(85, 85, 85);
+    color: rgb(173, 170, 170);
+}
+.contactme{
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #121212;
+    align-items: center;
+    display:block;
+    height: 200px;
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+.contactme .imagerightside h1{
+    font-size: 150px;
+    color: white;
+    box-sizing: black 10px 10px;
+}
+.contactme .imagerightside{
+position: absolute;
+right: 1%;
+top: 10%;
+}
+.contactme .text{
+    padding-left:  25px;
+    padding-top: 30px;
+    line-height: 50px;
+}
+.contactme h3{
+    color: #f9f9f9;
+    font-weight: lighter;
+}
+.contactme h2{
+    color: #2574bc;
+}
+.contactme .text ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+.contactme .text #contactmes{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding-left: 13px;
+    background-color: #e47b22;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    padding-right: 15px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+.contactme .text #contactmes:hover{
+    background: rgb(78, 76, 76);
+    color: black;
+}
+.aboutme{
+    box-sizing: border-box;
+   display: block;
+   background-color: #121212;
+   height: 200px;
+   align-items: center;
+   margin-top: 20px;
+   margin-left: 3%;
+   margin-right: 3%;
+  position:relative;
+  padding-left: 20px;
+  line-height: 35px;
+}
+.aboutme .imagerightside img{
+    height: 195px;
+    width: 240px;
+}
+.aboutme .imagerightside{
+    position: absolute;
+    left: 1032px;
+    top: 2%;
+}
+.aboutme #aboutmore a{
+    text-decoration: none;
+    color: white;
+}
+.aboutme #aboutmore  {
+   position: relative;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding-left: 13px;
+    background-color: #e47b22;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 5px;
+    transition: 0.4s;
+}
+.aboutme #aboutmore:hover{
+    background: gray;
+}
+.aboutme h3{
+    padding-top: 4px;
+    color: #e47b22;
+}
+.aboutme h2{
+    display: flex;
+    text-align: center;
+    color: #f1f2f3;
+}
+.aboutme p{
+    color: #f1f2f3;
+}
+.Secondcolumn{
+    box-sizing: border-box;
+    margin-top: 20px;
+    background-color: #2574bc;
+    position: relative;
+    height: 220px;
+}
+.Secondcolumn .header2nd .logo h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.centertext2nd{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.centertext2nd ul li a{
+    color: white;
+    text-decoration: none;
+}
+.centertext2nd .buttons2nd{
+    padding-top: 20px;
+}
+.centertext2nd .buttons2nd #Aboutmore{
+    font-weight: lighter;
+    position: absolute;
+    border-radius: 40px;
+    border: 1px solid #e47b22;
+    background-color: #e47b22;
+    width: 130px;
+    height: 40px;
+    padding-top: 10px;
+    left: 45%;
+    transition: 0.4s;
+}
+.centertext2nd .buttons2nd #Aboutmore:hover{
+    background: gray;
+    border: 1px solid gray;
+}
+.thirdcolumn{
+    display: flex;
+    box-sizing: border-box;
+    background-color: white;
+    height: 210px;
+    position: relative;
+}
+.thirdcolumn .logotext{
+    padding-top: 45px;  
+}
+.thirdcolumn .logotext h2{
+    font-family: monospace;
+}
+.thirdcolumn .logo img{
+    height: 120px;
+    width: 110px;
+}
+.thirdcolumn .thirdcolumncenter{
+    padding-top: 100px;
+    text-align: center;
+    padding-right: 150px;
+}
+.buttonsforthirdcolumn  ul li a{
+    color: white;
+    text-decoration: none;
+}
+.thirdcolumn .buttonsforthirdcolumn{
+    padding-top: 15px;
+}
+.thirdcolumn .buttonsforthirdcolumn #button3rd{
+    font-weight: lighter;
+    position: absolute;
+    border-radius: 40px;
+    border: 1px solid #e47b22;
+    background-color: #e47b22;
+    width: 130px;
+    height: 40px;
+    padding-top: 10px;
+    left: 45%;
+    transition: 0.3s;
+}
+.thirdcolumn .buttonsforthirdcolumn #button3rd:hover{
+    background: gray;
+    border: 1px solid gray;
+}

@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;; 
+    box-sizing: border-box;
+}
+body{
+    background: rgb(69, 69, 245);
+}
+.header{
+    font-family: monospace;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgb(69, 69, 245);
+}
+.header .logo{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+.header .logo h2{
+    font-size: 30px;
+    color: white;
+}
+.header .home{
+    padding-right: 10px;
+}
+.header .home ul li{
+    list-style: none;
+}
+.header .home ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.article .intro h3{
+    font-family: monospace;
+    color: white;
+    font-size: 30px;
+}
+.article .intro{
+    padding: 40px;
+}
+.article{
+    position: relative;
+    text-align: center;
+}
+.article .articleabout{
+   text-align: center;
+   color: white;
+   display: flex;
+}
+.article .articleabout .ISOC h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.article .articleabout .CWW h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.article .articleabout .NST h1{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.article .articleabout .ISOC{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    background: rgba(1, 1, 201, 0.836);
+    width: 500px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: .4;
+    transition: 0.5s;
+}
+.article .articleabout .CWW{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    background: rgba(1, 1, 201, 0.836);
+    width: 500px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: .4;
+    transition: 0.5s;
+}
+.article .articleabout .NST{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    background: rgba(1, 1, 201, 0.836);
+    width: 500px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: .4;
+    transition: 0.5s;
+}
+.article .articleabout .ISOC:hover{
+    background: blue;
+    color: white;
+    opacity: 20;
+    cursor: pointer;
+}
+.article .articleabout .CWW:hover{
+    background: blue;
+    color: white;
+    opacity: 20;
+    cursor: pointer;
+}
+.article .articleabout .NST:hover{
+    background: blue;
+    color: white;
+    opacity: 20;
+    cursor: pointer;
+}
+.Secmobile{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+}
+.Secmobile .logom{
+    display: flex;
+    position: absolute;
+    padding-left: 8px;
+    padding-top: 20px;
+}
+
+.Secmobile .situation{
+    border-top: 1px solid white ;
+    margin-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+.challenge .logoc{
+    display: flex;
+    position: absolute;
+    padding-left: 8px;
+    top: 20px;
+}
+.challenge .challenges{
+    margin-top: 30px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+.challenge{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    
+}
+.mdm{
+   display: inline;
+   position: relative;
+   justify-content: center;
+   color: white;
+   padding: 0;
+   margin: 0;
+}
+.mdm .mobilemd{
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+.mdm .mobilemd h1{
+    background-color: rgb(202, 252, 252);
+    text-align: center;
+    color: blue;
+    width: 390px;
+}
+.mdm .policy .image img{
+    height: 600px;
+    width: 900px;
+    border-radius: 10%;
+    box-shadow: black 10px 10px;
+}
+.mdm .policy .image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.mdm .policy{
+    position: relative;
+    padding-left: 100px;
+    padding-bottom: 30px;
+   
+}
+.mdm .policy h2{
+    background-color: rgb(202, 252, 252);
+    text-align: center;
+    color: blue;
+    width: 170px;
+   
+}
+.mdm .loss{
+    padding-left: 100px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+.mdm .loss h2{
+    background-color: rgb(202, 252, 252);
+    text-align: center;
+    color: blue;
+    width: 225px;
+} 
+.appstore{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.appstore .appimg img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5%;
+    box-shadow: 10px 10px;
+}
+.appstore .appimg{
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+   
+}
+.appstore .eas h1 {
+    background-color: rgb(202, 252, 252);
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+.appstore .eas p{
+    color: white;
+    font-size: 25px;
+}
+.appstore .eas{
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 150px;
+}
+.ms .msimg img{
+    height: 400px;
+    width: 500px;
+    border-radius: 10%;
+    box-shadow: black  10px 10px;
+}
+.ms .msimg{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+}
+.ms{
+    color: white;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.ms .mobilesec h2{
+    text-align: center;
+    width: 77%;
+    background-color: rgb(202, 252, 252);
+    color: blue;
+   font-size: 50px;
+}
+.ms .mobilesec p{
+    font-size: 20px;
+}
+.ms .mobilesec ul li{
+    font-size: 20px;
+}
+.ms .mobilesec{
+    padding-top: 130px;
+    padding-left: 130px;
+}
+/* fistarticle */
+.shp .intros{
+   padding: 100px 100px 100px 250px;
+    text-align: center;
+}
+.shp .intros h1{
+    background-color: aqua;
+    font-size: 50px;
+    color: blue;
+    width: 890px;
+}
+.shp .firstarticle{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+.shp .firstarticle  h2{
+    color: rgb(66, 66, 66);
+}
+.shp .firstarticle p{
+    color: rgb(66, 66, 66);
+}
+/* for Anti-malaware */
+.shp .firstarticle .award{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
+/* for-windows-and mac */
+.shp .firstarticle .Win{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
+/* for Small file size */
+.shp .firstarticle .sfs{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
+/* 2ndarticle */
+.shp .secondarticle{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.shp .secondarticle h2{
+   color: rgb(66, 66, 66);
+}
+.shp .secondarticle p{
+    color: rgb(66, 66, 66);
+}
+/* for keep */
+.shp .secondarticle .keep{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
+/* for ods */
+.shp .secondarticle .ods{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
+/* for wsm */
+.shp .secondarticle .wsm{
+    background: white;
+    width: 400px;
+    margin: 20px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 2%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: black 10px 10px 10px ;
+}
