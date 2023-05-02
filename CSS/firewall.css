@@ -61,7 +61,7 @@
     justify-content: start;
     position: sticky;
     background: gray;
-    width: 674px;
+    width: 900px;
     height: 452px;
     line-height: 110px;
     z-index: 999;
@@ -126,9 +126,23 @@
 .Hfirewall #Mega{
     margin-left: 20px;
 }
+.typeoffirewall{
+    margin-bottom: 20px;
+}
 .typeoffirewall h2{
     padding-top: 20px;
     color: rgb(250, 59, 91);
 }
-
-
+.articles{
+    margin-left: 20px ;
+}
+.firewallconfig{
+    margin-left: 30px;
+}
+.firewallconfig h2{
+    color: rgb(250, 59, 91);
+}
+.firewallconfig #number{
+    font-size: 20px;
+    color: rgb(250, 59, 91);
+}

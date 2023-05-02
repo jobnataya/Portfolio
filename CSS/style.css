@@ -117,6 +117,7 @@ top: 10%;
 .aboutme .imagerightside img{
     height: 195px;
     width: 240px;
+    border-radius: 10%;
 }
 .aboutme .imagerightside{
     position: absolute;
@@ -241,4 +242,11 @@ top: 10%;
 .thirdcolumn .buttonsforthirdcolumn #button3rd:hover{
     background: gray;
     border: 1px solid gray;
+}
+.footer{
+    height: 200px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 35px;
 }
