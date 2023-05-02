@@ -26,8 +26,8 @@
         <ul>
             <li><a href="#firewall">What is Firewall</a></li>
             <li><a href="#History">Firewall History</a></li>
-            <li><a href="">Types of Firewalls</a></li>
-            <li><a style="font-size: smaller;" href="">Firewall Configuration</a></li>
+            <li><a href="#type">Types of Firewalls</a></li>
+            <li><a style="font-size: smaller;" href="#config">Firewall Configuration</a></li>
         </ul>
     </div>
     <div class="articles">
@@ -79,7 +79,7 @@
             </ul>
         </div>
         <div class="typeoffirewall">
-            <h2>Types of Firewalls</h2>
+            <h2 id="type">Types of Firewalls</h2>
             <br>
             <ul>
             <li>Packet Filtering</li>
@@ -104,6 +104,82 @@
             </ul>
             <br>
             <p>Deep packet inspection Firewall with application-level inspection.</p>
+        </div>
+        <div class="firewallconfig">
+            <h2 id="config">How to Configure a Firewall</h2>
+            <br>
+            <p>Proper configuration is essential to supporting internal networks and stateful packet inspection. Here is how to configure a firewall securely:</p>
+            <br>
+            <ol>
+                <li id="number"> Secure the Firewall</li>
+            </ol>
+            <br>
+            <p>
+                Securing a firewall is the vital first step to ensure only authorized administrators have access to it. This includes actions such as:
+            </p>
+            <br>
+            <ol>
+                <li>
+                    <ol>
+                        <li>Update with the latest firmware</li>
+                        <li>Never putting firewalls into production without appropriate configurations in place</li>
+                        <li>Deleting, disabling, or renaming default accounts and changing default passwords </li>
+                        <li>Use unique, secure passwords</li>
+                        <li>Never using shared user accounts. If a firewall will be managed by multiple administrators, additional admin accounts must have limited privileges based on individual responsibilities</li>
+                        <li>Disabling the Simple Network Management Protocol (SNMP), which collects and organizes information about devices on IP networks, or configuring it for secure usage</li>
+                        <li>Restricting outgoing and incoming network traffic for specific applications or the Transmission Control Protocol (TCP)</li>
+                    </ol>
+                </li>
+                <br>
+                <li>
+                    <ol>
+                        <li id="number">Establish Firewall Zones and an IP Address Structure</li>
+                    </ol>
+                    <br>
+                    <p>It is important to identify network assets and resources that must be protected. This includes creating a structure that groups corporate assets into zones based on similar functions and the level of risk.</p>
+                    <br>
+                    <p>A good example of this is servers—such as email servers, virtual private network (VPN) servers, and web servers—placed in a dedicated zone that limits inbound internet traffic, often referred to as a demilitarized zone (DMZ). A general rule is that the more zones created, the more secure the network is. </p>
+                    <br>
+                    <p>However, having more zones also demands more time to manage them. With a network zone structure established, it is also important to establish a corresponding IP address structure that assigns zones to firewall interfaces and subinterfaces.</p>
+                </li>
+                <br>
+                <li>
+                    <ol>
+                        <li id="number">Configure Access Control Lists (ACLs)</li>
+                    </ol>
+                    <p>Access control lists (ACLs) enable organizations to determine which traffic is allowed to flow in and out of each zone. ACLs act as firewall rules, which organizations can apply to each firewall interface and subinterface.</p>
+                    <br>
+                    <p>ACLs must be made specific to the exact source and destination port numbers and IP addresses. Each ACL should have a “deny all” rule created at the end of it, which enables organizations to filter out unapproved traffic. Each interface and subinterface also needs an inbound and outbound ACL to ensure only approved traffic can reach each zone. It is also advisable to disable firewall administration interfaces from public access to protect the configuration and disable unencrypted firewall management protocols.</p>
+                </li>
+                <br>
+                <li>
+                    <ol>
+                        <li id="number">Configure Other Firewall Services and Logging</li>
+                    </ol>
+                    <br>
+                    <p>Some firewalls can be configured to support other services, such as a Dynamic Host Configuration Protocol (DHCP) server, intrusion prevention system (IPS), and Network Time Protocol (NTP) server. It is important to also disable the extra services that will not be used. </p>
+                    <br>
+                    <p>Further, firewalls must be configured to report to a logging service to comply with and fulfill Payment Card Industry Data Security Standard (PCI DSS) requirements.</p>
+                </li>
+                <br>
+                <li>
+                    <ol>
+                        <li id="number">Test the Firewall Configuration</li>
+                    </ol>
+                    <br>
+                    <p>With the configurations made, it is critical to test them to ensure the correct traffic is being blocked and that the firewall performs as intended. The configuration can be tested through techniques like penetration testing and vulnerability scanning. Remember to back up the configuration in a secure location in case of any failures during the testing process.</p>
+                    <br>
+                </li>
+                <li>
+                    <ol>
+                        <li id="number">Manage Firewall Continually</li>
+                    </ol>
+                    <br>
+                    <p>Firewall management and monitoring are critical to ensuring that the firewall continues to function as intended. This includes monitoring logs, performing vulnerability scans, and regularly reviewing rules. It is also important to document processes and manage the configuration continually and diligently to ensure ongoing protection of the network. </p>
+                </li>
+            </ol>
+            <br>
+            
         </div>
     </div>
 </div>
